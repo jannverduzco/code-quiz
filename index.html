@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <!-- Nav to Highscores -->
+        <section class="row">
+            <section class="col-3">
+                <button class="view-scores"> View Highscores</button>
+            </section>
+
+            <section class="col-7">
+                <h3 class="view-scores"></h3>
+            </section>
+            <!-- Quiz time count down -->
+            <section class="col-2">
+                <div class="container">
+                    <div class="time"> Time <span id="count">1:00</span> </div>
+            </section>
+        </section>
+
+        <section class="" id="sub-container">
+            <!-- Quiz introduction -->
+            <article class="quiz-info">
+                <h1>Code Quiz</h1>
+                <p> Answer the following code-related question within the time limit (1 minute). Keep in mind that
+                    incorrect
+                    answers will penalize your score time by 5 seconds. Goodluck!</p>
+                <button class="start-btn"> Start Quiz </button>
+            </article>
+
+            <!-- QUESTION 1 -->
+            <h4 class="question">What does HTML stand for?</h4>
+
+            <p class="choice">Hyper Text Multi Language</p>
+            <p class="choice">Hyper Text Main Language</p>
+            <p class="choice">Hyper Tag Multi Language</p>
+            <p class="choice">Hyper Text Markup Language</p>
+
+            <!-- QUESTION 2  -->
+            <h4 class="question"> What is the very first declaration in an HTML document?</h4>
+            <p class="choice"> &lt;div&gt;</p>
+            <p class="choice">&lt;Head&gt;</p>
+            <p class="choice">&lt;title&gt;</p>
+            <p class="choice">&lt;!DOCTYPE html&gt;</p>
+
+            <!-- QUESTION 3 -->
+            <h4 class="question"> What does CSS stand for?</h4>
+
+            <p class="choice">Cascading Style Sheets</p>
+            <p class="choice">Cascading Style Sample</p>
+            <p class="choice">Cascading Sectioin Style</p>
+            <p class="choice">Cascading Style Sections</p>
+
+            <!-- QUESTION 4 -->
+            <h4 class="question">Which of the following removes the the first element from an array?</h4>
+            <p class="choice">.pop()</p>
+            <p class="choice">.shift()</p>
+            <p class="choice">.push()</p>
+            <p class="choice">.unshift()</p>
+
+            <!-- QUESTION 5 -->
+            <h4 class="question"> What is the correct way to write a JavaScript array?</h4>
+            <p class="choice">var makes = 1 = ("toyota"), 2 = ("honda"), 3 = ("nissan")</p>
+            <p class="choice">var colors = ["white", "grey", "navy"]</p>
+            <p class="choice">var = 1:"white", 2:"grey", 3:"navy")</p>
+            <p class="choice"> var colors = "red", "freen", "blue"</p>
+
+            <br>
+
+            <!-- Quiz Completion -->
+            <h3 class="Complete"> Completed! </h3>
+            <p>Your final score is <span class="score"> _ </span></p>
+
+            <div class="intls-input">
+                <label>Enter initials:</label>
+                <input type="text" />
+            </div>
+            <button class="submit-btn"> Submit </button>
+            
+            <br>
+
+            <!-- Quiz Summary -->
+            <h3>Highscores</h3>
+            <span class=" Highscores-list-names"></span>
+            <button class="go-back-btn"> Go Back</button>
+            <button class="clear-high-btn"> Clear Highscores</button>
+
+
+
+        </section>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <link type="text/javascript" src="script.js">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

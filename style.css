@@ -1,0 +1,99 @@
+
+/* outter container */
+.container {
+
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    font-size: 18px;
+    color: rgb(63, 13, 63);
+    /* Typography */
+    font-family: 'Crete Round', serif;
+}
+
+.view-scores {
+
+    background-color: transparent;
+    color: #41125c;
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+}
+
+/* quiz description */
+.quiz-info {
+    text-align: center;
+}
+
+
+/* inner container */
+#sub-container {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+}
+
+/* paragraph typography */
+p {
+    font-size: 18px;
+}
+
+/*  heading typography */
+h3 {
+    font-size: 18px;
+}
+
+/* start quiz button */
+.start-btn {
+    background-color: #41125c;
+    border-radius: .5rem;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+/* submit score and initials */
+.submit-btn {
+    background-color: #41125c;
+    border-radius: .5rem;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+/* highscore chart  */
+.highscore-list-names {
+    background-color: rgb(184, 172, 216);
+    font-size: 12;
+}
+
+/* end of game 'Go Back' button */
+.go-back-btn {
+    background-color: #41125c;
+    border-radius: .5rem;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*  clear highscores end button */
+.clear-high-btn {
+    background-color: #41125c;
+    border-radius: .5rem;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
