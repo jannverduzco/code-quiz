@@ -1,28 +1,28 @@
 //////////// VARIABLES ----------------------------------------------------------
-var questionsP= [
+var questionsP = [
     {
         question: "What does HTML stand for?",
         choices: ["Hypertext Multi Language", "Hypertext Main Language", "Hypertag Multi Language", "Hypertext Markup Language"],
-        answer: "Hypertext Markup Language"
+        answer: "choice-d"
     },
 
     {
         question: "What is the very first declaration in an HTML document? ",
         choices: ["<div>", "<Head>", "<title>", "<!DOCTYPE html>"],
-        answer: "<!DOCTYPE html>"
+        answer: "choice-d"
     },
 
     {
         question: "What does CSS stand for?",
         choices: ["Cascading Style Sheets", "Cascading Style Sample", "Cascading Sectioin Style", "Cascading Style Sections"],
-        answer:"Cascading Style Sheets"
+        answer: "choice-a"
 
     },
 
     {
         question: "Which of the following removes the first element from an array?",
         choices: [".pop() ", ".shift()", ".push()", ".unshift()"],
-        answer: ".shift()"
+        answer: "choice-b"
     },
 
     {
@@ -31,12 +31,17 @@ var questionsP= [
         answer: "Document Object Model"
     }
 ]
-var quizInfo = document.querySelector(".quiz-info")
+var quizInfo = document.querySelector(".quiz-info");
 var startButton = document.querySelector(".start");
 var timerEl = document.querySelector(".timer");
-var questions = document.querySelector(".questions")
-var currentQuestion = document.querySelector(".current-question")
-var quizCompleted = document.querySelector(".quiz-completed")
+var questions = document.querySelector(".questions");
+var currentQuestion = document.querySelector(".current-question");
+var choiceA = document.querySelector(".choice-a");
+var choiceB = document.querySelector(".choice-b");
+var choiceC = document.querySelector(".choice-c");
+var choiceD = document.querySelector(".choice-d");
+var correct = 100;
+var quizCompleted = document.querySelector(".quiz-completed");
 // var score = document.querySelector("")
 var submitScore = document.querySelector(".submit-button");
 var highscoresSection = document.querySelector(".highscores-section")
@@ -48,6 +53,7 @@ var zero = 0;
 //////////// LISTENERS ----------------------------------------------------------
 
 startButton.addEventListener("click", startQuiz);
+
 
 
 //////////// FUNCTIONS ----------------------------------------------------------
@@ -81,9 +87,29 @@ quizCompleted.style.display = "none";
 
 function renderQuestion() {
     currentQuestion.textContent = questionsP[0].question;
-    console.log(currentQuestion)
+
+    choiceA.textContent = questionsP[0].choices[0];
+    choiceB.textContent = questionsP[0].choices[1];
+    choiceC.textContent = questionsP[0].choices[2];
+    choiceD.textContent = questionsP[0].choices[3];
 }
 
+function checker(){
+    var user = this.getAttribute ("class")
+    if (user == questions[0].answer) {
+        secondsRem -= 5;
+    }
+
+    highscoresSection.style.display = "none";
+    quizCompleted.style.display = "none";
+
+
+}
+
+    choiceA.addEventListener("click", )
+    choiceB.addEventListener("click")
+    choiceC.addEventListener("click")
+    choiceD.addEventListener("click")
 
 
 
