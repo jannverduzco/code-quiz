@@ -40,6 +40,7 @@ var choiceA = document.querySelector(".choice-a");
 var choiceB = document.querySelector(".choice-b");
 var choiceC = document.querySelector(".choice-c");
 var choiceD = document.querySelector(".choice-d");
+var choiceStatus = document.querySelector("#choice-status")
 var correct = 100;
 var quizCompleted = document.querySelector(".quiz-completed");
 // var score = document.querySelector("")
@@ -95,21 +96,28 @@ function renderQuestion() {
 }
 
 function checker(){
-    var user = this.getAttribute ("class")
+    var user = document.getElementByTagName("button")[0].geyAttribute("class");
     if (user == questions[0].answer) {
+        secondsRem += 5;
+        choiceStatus.textContent = "Good Job!"
+    
+    }
+
+    else {
+        correct -= 20;
         secondsRem -= 5;
+        choiceStatus.textContent = "Wrong!"
     }
 
     highscoresSection.style.display = "none";
     quizCompleted.style.display = "none";
 
-
 }
 
-    choiceA.addEventListener("click", )
-    choiceB.addEventListener("click")
-    choiceC.addEventListener("click")
-    choiceD.addEventListener("click")
+    choiceA.addEventListener("click", checker)
+    choiceB.addEventListener("click", checker)
+    choiceC.addEventListener("click", checker)
+    choiceD.addEventListener("click", checker)
 
 
 
