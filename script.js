@@ -34,6 +34,7 @@ var questionsP = [
 var quizInfo = document.querySelector(".quiz-info");
 var startButton = document.querySelector(".start");
 var timerEl = document.querySelector(".timer");
+var questionIndex = 0;
 var questions = document.querySelector(".questions");
 var currentQuestion = document.querySelector(".current-question");
 var choiceA = document.querySelector(".choice-a");
@@ -59,7 +60,7 @@ startButton.addEventListener("click", startQuiz);
 
 //////////// FUNCTIONS ----------------------------------------------------------
 
-
+// 60 sec timer function
 function startQuiz() {
     console.log("startQuiz")
     var timerInterval = setInterval(function () {
@@ -80,7 +81,7 @@ function startQuiz() {
 
     renderQuestion();
 }
-
+//  hides the sections ahead
 quizInfo.style.display = "block";
 questions.style.display = "none";
 highscoresSection.style.display = "none";
@@ -118,6 +119,7 @@ function checker(){
     choiceB.addEventListener("click", checker)
     choiceC.addEventListener("click", checker)
     choiceD.addEventListener("click", checker)
+    
 
 
 
